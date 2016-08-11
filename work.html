@@ -1,0 +1,17 @@
+<DOCTYPE html>
+<html ng-app>
+	<head></head>
+	<body>
+		<div class = 'container' ng-init = "customers = [{name: 'Harry', city: 'Delhi'}, {name: 'Peter', city: 'Kolkata'}, {name: 'Sam', city: 'Chennai'}]">
+		Name:
+		<br/>
+		<input type = 'text' ng-model = 'name' />{{name}}
+
+		<ul>
+			<li data-ng-repeat = 'Pname in customers | filter: name'>{{Pname.name}} - {{Pname.city}}</li>
+		</ul>
+		</div>
+		<script src = 'Scripts/angular.js'></script>
+	<body>
+	</head>
+</html>
